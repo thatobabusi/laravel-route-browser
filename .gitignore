@@ -1,0 +1,9 @@
+# PHP packages
+/composer.lock
+/vendor/
+
+# Node packages
+/node_modules/
+
+# Operating system files
+.DS_Store

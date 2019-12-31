@@ -1,0 +1,16 @@
+# Exclude development files from exported zip files
+# To test this, commit the changes then run:
+# scripts/list-production-files.sh
+
+/.editorconfig export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+
+/*.lock export-ignore
+/*.md export-ignore
+/*.svg export-ignore
+/*.xml export-ignore
+/*.yml export-ignore
+
+/scripts export-ignore
+/tests export-ignore

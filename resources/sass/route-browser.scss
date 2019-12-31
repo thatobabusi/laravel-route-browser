@@ -1,0 +1,114 @@
+//--------------------------------------
+// Bootstrap
+//--------------------------------------
+
+$primary: #ff2d20; // Laravel 6 logo colour
+$danger: #f00;
+$text-muted: #adb5bd; // $gray-500
+$input-placeholder-color: #adb5bd; // $gray-500
+$code-color: #000;
+
+$modal-lg: 97%;
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+//@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/code';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/buttons';
+//@import '~bootstrap/scss/transitions';
+//@import '~bootstrap/scss/dropdown';
+//@import '~bootstrap/scss/button-group';
+//@import '~bootstrap/scss/input-group';
+@import '~bootstrap/scss/custom-forms';
+//@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/card';
+//@import '~bootstrap/scss/breadcrumb';
+//@import '~bootstrap/scss/pagination';
+//@import '~bootstrap/scss/badge';
+//@import '~bootstrap/scss/jumbotron';
+//@import '~bootstrap/scss/alert';
+//@import '~bootstrap/scss/progress';
+//@import '~bootstrap/scss/media';
+//@import '~bootstrap/scss/list-group';
+@import '~bootstrap/scss/close';
+//@import '~bootstrap/scss/toasts';
+@import '~bootstrap/scss/modal';
+//@import '~bootstrap/scss/tooltip';
+//@import '~bootstrap/scss/popover';
+//@import '~bootstrap/scss/carousel';
+//@import '~bootstrap/scss/spinners';
+@import '~bootstrap/scss/utilities';
+//@import '~bootstrap/scss/print';
+
+
+//--------------------------------------
+// Font Awesome
+//--------------------------------------
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+//@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+
+//--------------------------------------
+// Highlight.js
+//--------------------------------------
+
+@import '~highlight.js/styles/tomorrow-night-bright.css';
+
+
+//--------------------------------------
+// Custom
+//--------------------------------------
+
+h5 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+h6 {
+    font-weight: 600;
+}
+
+.route-browser-row,
+.route-browser-link a {
+    cursor: pointer;
+}
+
+.route-browser-link {
+    cursor: default;
+}
+
+.route-browser-details-row,
+.route-browser-details {
+    display: none;
+}
+
+// Make table headers sticky - https://stackoverflow.com/a/44004100/167815
+.route-browser-table-sticky thead tr th {
+    background: white;
+    position: sticky;
+    top: -1px; // 1px over the underlying content is visible in Chrome - maybe due to the top border?
+    z-index: 10;
+
+    // Fix missing bottom border - https://stackoverflow.com/a/45042852/167815
+    border-bottom: none;
+
+    &::after {
+        border-bottom: (2 * $table-border-width) solid $table-border-color;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -$table-border-width;
+        width: 100%;
+    }
+}
