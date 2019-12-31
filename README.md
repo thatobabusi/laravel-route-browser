@@ -11,7 +11,7 @@
 
 A web-based route list GUI for [Laravel](https://laravel.com/).
 
-<img src="screenshot.png" width="810" height="486" alt="">
+![](screenshot.png)
 
 
  Table of Contents
