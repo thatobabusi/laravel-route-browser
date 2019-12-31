@@ -5,5 +5,11 @@
 # Node packages
 /node_modules/
 
+# Test output
+/.phpunit.result.cache
+/build/logs/clover.xml
+/test-coverage/
+/tests/storage/
+
 # Operating system files
 .DS_Store
