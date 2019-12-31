@@ -11,6 +11,11 @@
 /*.png export-ignore
 /*.xml export-ignore
 /*.yml export-ignore
+/package.json export-ignore
+/webpack.*.js export-ignore
 
-/scripts export-ignore
-/tests export-ignore
+/resources/img/ export-ignore
+/resources/js/ export-ignore
+/resources/sass/ export-ignore
+/scripts/ export-ignore
+/tests/ export-ignore
