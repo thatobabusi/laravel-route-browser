@@ -57,9 +57,7 @@ For security, by default, Route Browser is only active if `APP_ENV=local` and `A
 
 **Bug fixes:** Please fix it and open a [pull request](https://github.com/davejamesmiller/laravel-route-browser/pulls). ([See below](#creating-a-pull-request) for more detailed instructions.) Bonus points if you add a unit test to make sure it doesn't happen again!
 
-**New version of Laravel:** [See below](#new-version-of-laravel) for details of everything that needs to be changed to support a new version of Laravel. (Don't just change `composer.json` and ignore the rest!)
-
-**New features:** Only features with a clear use case and well-considered API will be accepted. They must be documented. If in doubt, make a proof-of-concept (either code or documentation) and open a [pull request](https://github.com/davejamesmiller/laravel-route-browser/pulls) to discuss the details.
+**New features:** Please build it and open a [pull request](https://github.com/davejamesmiller/laravel-route-browser/pulls). If you want to discuss it before doing too much work, make a proof-of-concept (either code or documentation) and open a [Draft PR](https://github.blog/2019-02-14-introducing-draft-pull-requests/) to discuss the details.
 
 
 ### Creating a pull request
