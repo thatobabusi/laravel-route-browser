@@ -30,7 +30,7 @@ A web-based route list GUI for [Laravel](https://laravel.com/).
 
 | Laravel Route Browser | Laravel   | PHP  |
 |-----------------------|-----------|------|
-| **1.0.0**             | 5.6+      | 7.1+ |
+| **1.0.0 – 1.0.1**     | 5.6+      | 7.1+ |
 
 
  Installation
@@ -196,6 +196,12 @@ If you get really stuck, I suggest you:
 --------------------------------------------------------------------------------
 
 *Laravel Route Browser uses [Semantic Versioning](http://semver.org/).*
+
+
+### [v1.0.1](https://github.com/davejamesmiller/laravel-route-browser/tree/1.0.1) (Thu 2 Jan 2020)
+
+- Fix displaying middlewares that are closures
+- Fix displaying middlewares added in the controller rather than the route
 
 
 ### [v1.0.0](https://github.com/davejamesmiller/laravel-route-browser/tree/1.0.0) (Tue 31 Dec 2019)
