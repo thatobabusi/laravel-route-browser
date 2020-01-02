@@ -189,31 +189,36 @@
             @forelse ($route->middleware() as $middleware)
                 <?php $handler = $middleware->handler ?>
                 <li>
-                    <code>
-                        @if ($middleware->parameters)
-                            {{ $handler->class() }}<span class="text-muted">::</span>handle<span class="text-muted">($request, $next,</span>
-                            {{ $middleware->parameters }}<span class="text-muted">)</span>
-                        @else
-                            {{ $handler->class() }}<span class="text-muted">::</span>handle<span class="text-muted">($request, $next)</span>
-                        @endif
-                    </code>
+                    @if ($class = $handler->class())
+                        <code>
+                            @if ($middleware->parameters)
+                                {{ $handler->class() }}<span class="text-muted">::</span>handle<span class="text-muted">($request, $next,</span>
+                                {{ $middleware->parameters }}<span class="text-muted">)</span>
+                            @else
+                                {{ $handler->class() }}<span class="text-muted">::</span>handle<span class="text-muted">($request, $next)</span>
+                            @endif
+                        </code>
+                    @else
+                        {{ $handler->summary() }}
+                    @endif
 
                     <small class="text-muted d-block mb-1">
                         <strong style="font-weight: 600;">Added in:</strong>
+                        <?php if (!is_string($middleware->addedIn)) { var_dump($middleware->addedIn);exit; } ?>
                         {{ $middleware->addedIn ?: 'Unknown' }}
                         @if ($middleware->original)
-                        &middot;
-                        <strong style="font-weight: 600;">Original:</strong>
-                        {{ $middleware->original }}
+                            &middot;
+                            <strong style="font-weight: 600;">Original:</strong>
+                            {{ $middleware->original }}
                         @endif
                         @if ($source = $handler->source())
-                        &middot;
-                        <strong style="font-weight: 600;">Source:</strong>
-                        @if ($code = $handler->code())
-                            <a href="#" data-toggle="modal" data-target="#source-code" data-code="{{ $code }}">{{ $source }}</a>
-                        @else
-                            {{ $source }}
-                        @endif
+                            &middot;
+                            <strong style="font-weight: 600;">Source:</strong>
+                            @if ($code = $handler->code())
+                                <a href="#" data-toggle="modal" data-target="#source-code" data-code="{{ $code }}">{{ $source }}</a>
+                            @else
+                                {{ $source }}
+                            @endif
                         @endif
                     </small>
                 </li>

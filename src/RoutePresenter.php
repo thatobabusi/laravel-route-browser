@@ -290,7 +290,7 @@ class RoutePresenter
                 $middlewares[] = (object)[
                     'handler' => new CallablePresenter($middleware),
                     'parameters' => [],
-                    'addedIn' => $added_ins[$key] ?? null,
+                    'addedIn' => implode(', ', $added_ins[$key]) ?? null,
                     'original' => null,
                     'terminates' => false,
                 ];
