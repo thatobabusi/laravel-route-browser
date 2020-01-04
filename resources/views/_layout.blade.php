@@ -28,8 +28,10 @@
 
             {{-- Logo --}}
             <a class="navbar-brand h1 mb-0 mr-0 pr-2" href="{{ route('route-browser.list') }}">
-                <i class="fab fa-laravel fa-lg"></i>
-                <span class="pl-2">Laravel Route Browser</span>
+                <i class="fab fa-laravel fa-lg mr-2" aria-hidden="true"></i>
+                <span class="sr-only">Laravel</span> Route Browser
+                &ndash;
+                {{ config('app.name') }}
             </a>
 
             {{-- Mobile toggle --}}
