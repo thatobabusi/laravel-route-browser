@@ -19,3 +19,6 @@
 /resources/sass/ export-ignore
 /scripts/ export-ignore
 /tests/ export-ignore
+
+# Exclude generated files from diffs
+/build/** binary
