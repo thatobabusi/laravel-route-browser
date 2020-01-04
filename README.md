@@ -11,6 +11,8 @@
 
 A web-based route list GUI for [Laravel](https://laravel.com/).
 
+(Similar to [Pretty Routes](https://github.com/garygreen/pretty-routes), [Laravel Routes Explorer](https://labs.infyom.com/laravelgenerator/docs/routes-explorer) and [Laravel Route Summary](https://github.com/biscofil/laravel_route_summary), but with more details and better search.)
+
 ![](screenshot.png)
 
 
