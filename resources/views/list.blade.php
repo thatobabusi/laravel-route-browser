@@ -17,7 +17,7 @@
                 <div class="card my-3">
                     <div class="card-header text-white bg-dark">
                         <a href="https://laravel.com/docs/routing" target="_blank" class="float-right text-white" style="line-height: 1.2;">
-                            <i class="fas fa-question-circle"></i>
+                            <i class="fas fa-question-circle" aria-hidden="true"></i>
                             Laravel Docs
                         </a>
                         <h6 class="m-0">Routes</h6>
