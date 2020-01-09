@@ -20,5 +20,5 @@ fi
 version="${1:-}"
 
 # Two separate steps because of: https://github.com/composer/composer/issues/7261
-composer require --dev "laravel/framework:${version}.*" --no-update
+composer require "laravel/framework:${version}.*" --no-update
 composer update
