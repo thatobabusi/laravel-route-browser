@@ -4,6 +4,8 @@
 
 # Node packages
 /node_modules/
+npm-debug.log
+yarn-error.log
 
 # Test output
 /.phpunit.result.cache
