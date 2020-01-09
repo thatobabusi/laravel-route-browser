@@ -2,8 +2,6 @@
 
 namespace RouteBrowserTests;
 
-use Illuminate\Foundation\Testing\TestResponse;
-
 class EnabledOrDisabledTest extends TestCase
 {
     public function testExplicitlyEnabled()
@@ -56,7 +54,8 @@ class EnabledOrDisabledTest extends TestCase
         $this->getRouteList()->assertOk();
     }
 
-    private function getRouteList(): TestResponse
+    /** @noinspection ReturnTypeCanBeDeclaredInspection Changed between Laravel 6 and 7 */
+    private function getRouteList()
     {
         return $this->withExceptionHandling()->get('/routes');
     }
