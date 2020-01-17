@@ -203,9 +203,9 @@ If you get really stuck, I suggest you:
 ### [v1.1.0](https://github.com/davejamesmiller/laravel-route-browser/tree/1.1.0) (Fri 17 Jan 2020)
 
 - Fix filtering by URL when not running in a subdirectory – Thanks to
-  ([Nguyễn Trần Chung](https://github.com/davejamesmiller/laravel-route-browser/pull/1)
+  [Nguyễn Trần Chung](https://github.com/davejamesmiller/laravel-route-browser/pull/1)
 - Add `excludes` array to config file – Also thanks to
-  ([Nguyễn Trần Chung](https://github.com/davejamesmiller/laravel-route-browser/pull/1)
+  [Nguyễn Trần Chung](https://github.com/davejamesmiller/laravel-route-browser/pull/1)
 
 
 ### [v1.0.1](https://github.com/davejamesmiller/laravel-route-browser/tree/1.0.1) (Thu 2 Jan 2020)
