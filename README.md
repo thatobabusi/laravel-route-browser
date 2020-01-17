@@ -32,7 +32,7 @@ A web-based route list GUI for [Laravel](https://laravel.com/).
 
 | Laravel Route Browser | Laravel   | PHP  |
 |-----------------------|-----------|------|
-| **1.0.0 – 1.0.1**     | 5.6+      | 7.1+ |
+| **1.0.0 – 1.1.0**     | 5.6+      | 7.1+ |
 
 
  Installation
@@ -162,7 +162,7 @@ If backwards-incompatible changes cause the **minimum** supported versions of La
 
 *This section is for maintainers only.*
 
-- Ensure the unit tests are updated and have 100% coverage
+- Ensure the unit tests are updated ~~and have 100% coverage~~ (eventually)
 - Update the [test app](https://github.com/davejamesmiller/laravel-packages-test), if appropriate, and test it manually
 - Ensure the [README](README.md) is up to date, including:
     - Document any new features
@@ -198,6 +198,14 @@ If you get really stuck, I suggest you:
 --------------------------------------------------------------------------------
 
 *Laravel Route Browser uses [Semantic Versioning](http://semver.org/).*
+
+
+### [v1.1.0](https://github.com/davejamesmiller/laravel-route-browser/tree/1.1.0) (Fri 17 Jan 2020)
+
+- Fix filtering by URL when not running in a subdirectory – Thanks to
+  ([Nguyễn Trần Chung](https://github.com/davejamesmiller/laravel-route-browser/pull/1)
+- Add `excludes` array to config file – Also thanks to
+  ([Nguyễn Trần Chung](https://github.com/davejamesmiller/laravel-route-browser/pull/1)
 
 
 ### [v1.0.1](https://github.com/davejamesmiller/laravel-route-browser/tree/1.0.1) (Thu 2 Jan 2020)
