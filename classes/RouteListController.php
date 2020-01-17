@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
 
 class RouteListController
 {
@@ -15,7 +16,11 @@ class RouteListController
         $routes = $collection->getRoutes();
 
         // Based on RouteCollection::matchAgainstRoutes() - sort fallback routes to the end
-        [$fallbacks, $routes] = collect($routes)->partition('isFallback');
+        [$fallbacks, $routes] = collect($routes)
+            ->reject(function ($route) {
+                return Str::is(config('route-browser.filters'), $route->uri);
+            })
+            ->partition('isFallback');
 
         /** @var Collection $routes */
         $routes = $routes
