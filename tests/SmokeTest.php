@@ -11,7 +11,7 @@ class SmokeTest extends TestCase
 {
     protected function getEnvironmentSetUp($app)
     {
-        config(['app.debug' => true, 'app.env' => 'local']);
+        config(['app.debug' => true, 'app.env' => 'local', 'route-browser.exclude-self' => false]);
     }
 
     public function testListPage()
