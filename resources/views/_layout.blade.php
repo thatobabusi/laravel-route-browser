@@ -17,7 +17,7 @@
         <link rel="icon" href="{{ route('route-browser.asset', 'favicon.png') }}" type="image/png">
 
         <link rel="stylesheet" href="{{ route('route-browser.asset', 'route-browser.css') }}">
-        <script src="{{ route('route-browser.asset', 'route-browser.js') }}" async></script>
+        <script src="{{ route('route-browser.asset', 'route-browser.js') }}" defer></script>
 
         @yield('head')
 
