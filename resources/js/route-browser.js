@@ -2,11 +2,13 @@ import 'bootstrap/js/dist/modal';
 import hljs from 'highlight.js/lib/highlight';
 import $ from 'jquery';
 
+const $body = $(document.body);
+
 // Configure highlight.js
 hljs.registerLanguage('php', require('highlight.js/lib/languages/php'));
 
 // Row toggle
-$('body').on('click', '.route-browser-row', function (event) {
+$body.on('click', '.route-browser-row', function (event) {
     if ($(event.target).closest('.route-browser-link').length === 0) {
         const $row = $(this);
         const $detailsRow = $row.next('.route-browser-details-row');
@@ -26,7 +28,7 @@ $('body').on('click', '.route-browser-row', function (event) {
 });
 
 // Source code modal
-$('#source-code').on('show.bs.modal', function (event) {
+$body.on('show.bs.modal', '#source-code', function (event) {
     const $link = $(event.relatedTarget);
     const code = $link.data('code');
     let $code = $('#source-code-code');
