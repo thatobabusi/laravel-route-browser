@@ -60,7 +60,13 @@ class RoutePresenter
         }
 
         // URI Host
-        $compiled = (new RouteCompiler($this->route))->compile();
+        if (class_exists(RouteCompiler::class)) {
+            // Laravel 5-6
+            $compiled = (new RouteCompiler($this->route))->compile();
+        } else {
+            // Laravel 7
+            $compiled = $this->route->toSymfonyRoute()->compile();
+        }
 
         if (!empty($uriParts['host']) && ($regex = $compiled->getHostRegex())) {
             if (!preg_match($regex, $uriParts['host'], $matches)) {
