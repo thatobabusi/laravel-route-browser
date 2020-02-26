@@ -32,7 +32,8 @@ A web-based route list GUI for [Laravel](https://laravel.com/).
 
 | Laravel Route Browser | Laravel   | PHP  |
 |-----------------------|-----------|------|
-| **1.0.0 – 1.1.0**     | 5.6+      | 7.1+ |
+| **1.1.1+**            | 5.6+      | 7.1+ |
+| 1.0.0 – 1.1.0         | 5.6 – 6.x | 7.1+ |
 
 
  Installation
@@ -198,6 +199,11 @@ If you get really stuck, I suggest you:
 --------------------------------------------------------------------------------
 
 *Laravel Route Browser uses [Semantic Versioning](http://semver.org/).*
+
+
+### [v1.1.1](https://github.com/davejamesmiller/laravel-route-browser/tree/1.1.1) (Wed 26 Feb 2020)
+
+- Fix filtering in Laravel 7
 
 
 ### [v1.1.0](https://github.com/davejamesmiller/laravel-route-browser/tree/1.1.0) (Fri 17 Jan 2020)
