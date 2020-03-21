@@ -51,7 +51,7 @@ php artisan vendor:publish --tag=route-browser-config
 
 Then visit `/routes` (or the path set in your config file).
 
-For security, by default, Route Browser is only active if `APP_ENV=local` and `APP_DEBUG=true`, *or* you set `ROUTE_BROWSER_ENABLED=true`, in `.env`.
+For security, by default, Route Browser is only active if `APP_ENV=local` and `APP_DEBUG=true`, *or* you set `ROUTE_BROWSER_ENABLED=true`, in `.env`. You should not enable it in production or any publically accessible environments.
 
  Contributing
 --------------------------------------------------------------------------------
