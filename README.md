@@ -1,3 +1,13 @@
+**As of 18 April 2020, Laravel Route Browser is not being maintained.**
+
+It started out as an experimental project to learn about Laravel's routing system and create an improved UI over `artisan route:list`, but the effort required to maintain it (especially when [the Laravel routing internals change](https://github.com/davejamesmiller/laravel-route-browser/blob/d09a6d2d468d37fd1b25a10d0f5e03141afe3e13/classes/RoutePresenter.php#L63-L69)) outweighs the benefit.
+
+There are a few alternatives listed below, but if you want to create your own fork, to fix bugs or add new features, please see [the instructions below](#creating-a-pull-request). The [MIT license](#license) requires you to keep the copyright notice and license information, but otherwise you can do what you like with the code and documentation.
+
+— *Dave*
+
+---
+
  Laravel Route Browser
 ================================================================================
 
