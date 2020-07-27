@@ -1,6 +1,6 @@
 <?php
 
-namespace DaveJamesMiller\RouteBrowser;
+namespace ThatoBabusi\RouteBrowser;
 
 use Closure;
 use Illuminate\Http\Request;

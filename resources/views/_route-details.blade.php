@@ -1,6 +1,6 @@
 <?php
 /**
- * @var DaveJamesMiller\RouteBrowser\RoutePresenter $route
+ * @var ThatoBabusi\RouteBrowser\RoutePresenter $route
  */
 ?>
 

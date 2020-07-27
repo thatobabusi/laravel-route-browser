@@ -2,7 +2,7 @@
 
 <?php
 /**
- * @var \Illuminate\Support\Collection|\DaveJamesMiller\RouteBrowser\RoutePresenter[] $routes
+ * @var \Illuminate\Support\Collection|\ThatoBabusi\RouteBrowser\RoutePresenter[] $routes
  */
 ?>
 

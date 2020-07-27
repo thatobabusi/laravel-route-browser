@@ -1,14 +1,14 @@
 {
-    "name": "davejamesmiller/laravel-route-browser",
+    "name": "thatobabusi/laravel-route-browser",
     "description": "A web-based route list GUI for Laravel.",
     "keywords": [
         "laravel"
     ],
-    "homepage": "https://github.com/davejamesmiller/laravel-route-browser",
+    "homepage": "https://github.com/thatobabusi/laravel-route-browser",
     "authors": [
         {
-            "name": "Dave James Miller",
-            "email": "dave@davejamesmiller.com"
+            "name": "Thato Babusi",
+            "email": "thatobabusi@yahoo.com"
         }
     ],
     "license": "MIT",
@@ -25,7 +25,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "DaveJamesMiller\\RouteBrowser\\": "classes/"
+            "ThatoBabusi\\RouteBrowser\\": "classes/"
         }
     },
     "autoload-dev": {
@@ -36,7 +36,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DaveJamesMiller\\RouteBrowser\\RouteBrowserServiceProvider"
+                "ThatoBabusi\\RouteBrowser\\RouteBrowserServiceProvider"
             ]
         }
     }

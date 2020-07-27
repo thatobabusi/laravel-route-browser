@@ -1,6 +1,13 @@
+**As of 27 July 2020, I forked this to take over and use this separately from the main repo as Dave is no longer supporting it. 
+Also tired of getting the notifications "package no longer supported" when I do composer install/update/dumpautoload etc.
+
+— *Thato*
+
+---
+
 **As of 18 April 2020, Laravel Route Browser is not being maintained.**
 
-It started out as an experimental project to learn about Laravel's routing system and create an improved UI over `artisan route:list`, but the effort required to maintain it (especially when [the Laravel routing internals change](https://github.com/davejamesmiller/laravel-route-browser/blob/d09a6d2d468d37fd1b25a10d0f5e03141afe3e13/classes/RoutePresenter.php#L63-L69)) outweighs the benefit.
+It started out as an experimental project to learn about Laravel's routing system and create an improved UI over `artisan route:list`, but the effort required to maintain it (especially when [the Laravel routing internals change](https://github.com/thatobabusi/laravel-route-browser/blob/d09a6d2d468d37fd1b25a10d0f5e03141afe3e13/classes/RoutePresenter.php#L63-L69)) outweighs the benefit.
 
 There are a few alternatives listed below, but if you want to create your own fork, to fix bugs or add new features, please see [the instructions below](#creating-a-pull-request). The [MIT license](#license) requires you to keep the copyright notice and license information, but otherwise you can do what you like with the code and documentation.
 
@@ -11,13 +18,13 @@ There are a few alternatives listed below, but if you want to create your own fo
  Laravel Route Browser
 ================================================================================
 
-[![Latest Stable Version](https://poser.pugx.org/davejamesmiller/laravel-route-browser/v/stable)](https://packagist.org/packages/davejamesmiller/laravel-route-browser)
-[![Total Downloads](https://poser.pugx.org/davejamesmiller/laravel-route-browser/downloads)](https://packagist.org/packages/davejamesmiller/laravel-route-browser)
-[![Monthly Downloads](https://poser.pugx.org/davejamesmiller/laravel-route-browser/d/monthly)](https://packagist.org/packages/davejamesmiller/laravel-route-browser)
-[![License](https://poser.pugx.org/davejamesmiller/laravel-route-browser/license)](https://packagist.org/packages/davejamesmiller/laravel-route-browser)
-[![Latest Unstable Version](https://poser.pugx.org/davejamesmiller/laravel-route-browser/v/unstable)](https://packagist.org/packages/davejamesmiller/laravel-route-browser)
-[![Build Status](https://travis-ci.com/davejamesmiller/laravel-route-browser.svg?branch=master)](https://travis-ci.com/davejamesmiller/laravel-route-browser)
-[![Coverage Status](https://coveralls.io/repos/github/davejamesmiller/laravel-route-browser/badge.svg?branch=master)](https://coveralls.io/github/davejamesmiller/laravel-route-browser?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/thatobabusi/laravel-route-browser/v/stable)](https://packagist.org/packages/thatobabusi/laravel-route-browser)
+[![Total Downloads](https://poser.pugx.org/thatobabusi/laravel-route-browser/downloads)](https://packagist.org/packages/thatobabusi/laravel-route-browser)
+[![Monthly Downloads](https://poser.pugx.org/thatobabusi/laravel-route-browser/d/monthly)](https://packagist.org/packages/thatobabusi/laravel-route-browser)
+[![License](https://poser.pugx.org/thatobabusi/laravel-route-browser/license)](https://packagist.org/packages/thatobabusi/laravel-route-browser)
+[![Latest Unstable Version](https://poser.pugx.org/thatobabusi/laravel-route-browser/v/unstable)](https://packagist.org/packages/thatobabusi/laravel-route-browser)
+[![Build Status](https://travis-ci.com/thatobabusi/laravel-route-browser.svg?branch=master)](https://travis-ci.com/thatobabusi/laravel-route-browser)
+[![Coverage Status](https://coveralls.io/repos/github/thatobabusi/laravel-route-browser/badge.svg?branch=master)](https://coveralls.io/github/thatobabusi/laravel-route-browser?branch=master)
 
 A web-based route list GUI for [Laravel](https://laravel.com/).
 
@@ -50,7 +57,7 @@ A web-based route list GUI for [Laravel](https://laravel.com/).
 --------------------------------------------------------------------------------
 
 ```bash
-composer require --dev davejamesmiller/laravel-route-browser
+composer require --dev thatobabusi/laravel-route-browser
 ```
 
 Optionally publish and edit the config file (`config/route-browser.php`):
@@ -66,11 +73,11 @@ For security, by default, Route Browser is only active if `APP_ENV=local` and `A
  Contributing
 --------------------------------------------------------------------------------
 
-**Documentation:** If you think the documentation can be improved in any way, please do [edit this file](https://github.com/davejamesmiller/laravel-route-browser/edit/master/README.md) and make a pull request.
+**Documentation:** If you think the documentation can be improved in any way, please do [edit this file](https://github.com/thatobabusi/laravel-route-browser/edit/master/README.md) and make a pull request.
 
-**Bug fixes:** Please fix it and open a [pull request](https://github.com/davejamesmiller/laravel-route-browser/pulls). ([See below](#creating-a-pull-request) for more detailed instructions.) Bonus points if you add a unit test to make sure it doesn't happen again!
+**Bug fixes:** Please fix it and open a [pull request](https://github.com/thatobabusi/laravel-route-browser/pulls). ([See below](#creating-a-pull-request) for more detailed instructions.) Bonus points if you add a unit test to make sure it doesn't happen again!
 
-**New features:** Please build it and open a [pull request](https://github.com/davejamesmiller/laravel-route-browser/pulls). If you want to discuss it before doing too much work, make a proof-of-concept (either code or documentation) and open a [Draft PR](https://github.blog/2019-02-14-introducing-draft-pull-requests/) to discuss the details.
+**New features:** Please build it and open a [pull request](https://github.com/thatobabusi/laravel-route-browser/pulls). If you want to discuss it before doing too much work, make a proof-of-concept (either code or documentation) and open a [Draft PR](https://github.blog/2019-02-14-introducing-draft-pull-requests/) to discuss the details.
 
 
 ### Creating a pull request
@@ -78,14 +85,14 @@ For security, by default, Route Browser is only active if `APP_ENV=local` and `A
 The easiest way to work on Laravel Route Browser is to tell Composer to install it from source (Git) using the `--prefer-source` flag:
 
 ```bash
-rm -rf vendor/davejamesmiller/laravel-route-browser
+rm -rf vendor/thatobabusi/laravel-route-browser
 composer install --prefer-source
 ```
 
 Then checkout the master branch and create your own local branch to work on:
 
 ```bash
-cd vendor/davejamesmiller/laravel-route-browser
+cd vendor/thatobabusi/laravel-route-browser
 git checkout -t origin/master
 git checkout -b YOUR_BRANCH
 ```
@@ -96,7 +103,7 @@ Now make your changes, including unit tests and documentation (if appropriate). 
 scripts/test.sh
 ```
 
-Then commit the changes. [Fork the repository on GitHub](https://github.com/davejamesmiller/laravel-route-browser/fork) if you haven't already, and push your changes to it:
+Then commit the changes. [Fork the repository on GitHub](https://github.com/thatobabusi/laravel-route-browser/fork) if you haven't already, and push your changes to it:
 
 ```bash
 git remote add YOUR_USERNAME git@github.com:YOUR_USERNAME/laravel-route-browser.git
@@ -105,7 +112,7 @@ git push -u YOUR_USERNAME YOUR_BRANCH
 
 Finally, browse to the repository on GitHub and create a pull request.
 
-(Alternatively, there is a [test app](https://github.com/davejamesmiller/laravel-packages-test) that you can use.)
+(Alternatively, there is a [test app](https://github.com/thatobabusi/laravel-packages-test) that you can use.)
 
 
 ### Using your fork in a project
@@ -123,7 +130,7 @@ To use your own fork in a project, update the `composer.json` in your main proje
     ],
     "require": {
         // UPDATE THIS:
-        "davejamesmiller/laravel-route-browser": "dev-YOUR_BRANCH"
+        "thatobabusi/laravel-route-browser": "dev-YOUR_BRANCH"
     }
 }
 ```
@@ -174,14 +181,14 @@ If backwards-incompatible changes cause the **minimum** supported versions of La
 *This section is for maintainers only.*
 
 - Ensure the unit tests are updated ~~and have 100% coverage~~ (eventually)
-- Update the [test app](https://github.com/davejamesmiller/laravel-packages-test), if appropriate, and test it manually
+- Update the [test app](https://github.com/thatobabusi/laravel-packages-test), if appropriate, and test it manually
 - Ensure the [README](README.md) is up to date, including:
     - Document any new features
     - [Compatibility Chart](README.md#compatibility-chart)
     - [Changelog](README.md#changelog)
 - Merge the changes into the `master` branch (if necessary)
 - Push the code changes to GitHub (`git push`)
-- Make sure [all tests are passing](https://travis-ci.org/davejamesmiller/laravel-route-browser)
+- Make sure [all tests are passing](https://travis-ci.org/thatobabusi/laravel-route-browser)
 - Tag the release (`git tag 1.2.3`)
 - Push the tag (`git push --tag`)
 
@@ -191,7 +198,7 @@ If backwards-incompatible changes cause the **minimum** supported versions of La
 
 Sorry, I don't offer any technical support, and GitHub Issues are disabled. That means I won't figure out why it's not working for you, I won't fix bugs for you, and I won't write new features on request - this is **free** software after all.
 
-**But** the beauty of open source is you can do whatever you want with it! You can fork it, fix it, improve it and extend it. If you don't want to maintain your own fork, and you think other people would benefit from your changes, you can submit a [pull request](https://github.com/davejamesmiller/laravel-route-browser/pulls) to have your changes included in the next release.
+**But** the beauty of open source is you can do whatever you want with it! You can fork it, fix it, improve it and extend it. If you don't want to maintain your own fork, and you think other people would benefit from your changes, you can submit a [pull request](https://github.com/thatobabusi/laravel-route-browser/pulls) to have your changes included in the next release.
 
 If you get really stuck, I suggest you:
 
@@ -211,26 +218,26 @@ If you get really stuck, I suggest you:
 *Laravel Route Browser uses [Semantic Versioning](http://semver.org/).*
 
 
-### [v1.1.1](https://github.com/davejamesmiller/laravel-route-browser/tree/1.1.1) (Wed 26 Feb 2020)
+### [v1.1.1](https://github.com/thatobabusi/laravel-route-browser/tree/1.1.1) (Wed 26 Feb 2020)
 
 - Fix filtering in Laravel 7
 
 
-### [v1.1.0](https://github.com/davejamesmiller/laravel-route-browser/tree/1.1.0) (Fri 17 Jan 2020)
+### [v1.1.0](https://github.com/thatobabusi/laravel-route-browser/tree/1.1.0) (Fri 17 Jan 2020)
 
 - Fix filtering by URL when not running in a subdirectory – Thanks to
-  [Nguyễn Trần Chung](https://github.com/davejamesmiller/laravel-route-browser/pull/1)
+  [Nguyễn Trần Chung](https://github.com/thatobabusi/laravel-route-browser/pull/1)
 - Add `excludes` array to config file – Also thanks to
-  [Nguyễn Trần Chung](https://github.com/davejamesmiller/laravel-route-browser/pull/1)
+  [Nguyễn Trần Chung](https://github.com/thatobabusi/laravel-route-browser/pull/1)
 
 
-### [v1.0.1](https://github.com/davejamesmiller/laravel-route-browser/tree/1.0.1) (Thu 2 Jan 2020)
+### [v1.0.1](https://github.com/thatobabusi/laravel-route-browser/tree/1.0.1) (Thu 2 Jan 2020)
 
 - Fix displaying middlewares that are closures
 - Fix displaying middlewares added in the controller rather than the route
 
 
-### [v1.0.0](https://github.com/davejamesmiller/laravel-route-browser/tree/1.0.0) (Tue 31 Dec 2019)
+### [v1.0.0](https://github.com/thatobabusi/laravel-route-browser/tree/1.0.0) (Tue 31 Dec 2019)
 
 - Initial release
 

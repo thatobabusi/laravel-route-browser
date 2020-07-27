@@ -1,6 +1,6 @@
 <?php
 
-namespace DaveJamesMiller\RouteBrowser;
+namespace ThatoBabusi\RouteBrowser;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;

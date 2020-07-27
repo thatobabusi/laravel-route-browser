@@ -1,8 +1,8 @@
 <?php
 
-use DaveJamesMiller\RouteBrowser\AssetController;
-use DaveJamesMiller\RouteBrowser\EnabledMiddleware;
-use DaveJamesMiller\RouteBrowser\RouteListController;
+use ThatoBabusi\RouteBrowser\AssetController;
+use ThatoBabusi\RouteBrowser\EnabledMiddleware;
+use ThatoBabusi\RouteBrowser\RouteListController;
 
 Route
     ::prefix(config('route-browser.path', 'routes'))

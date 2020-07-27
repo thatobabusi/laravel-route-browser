@@ -1,6 +1,6 @@
 <?php
 
-namespace DaveJamesMiller\RouteBrowser;
+namespace ThatoBabusi\RouteBrowser;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
@@ -26,7 +26,7 @@ class RouteListController
                     // Checking the controller not the paths to prevent false-positives
                     $controller = $route->getController();
 
-                    if (is_object($controller) && strpos(get_class($controller), 'DaveJamesMiller\RouteBrowser\\') !== false) {
+                    if (is_object($controller) && strpos(get_class($controller), 'ThatoBabusi\RouteBrowser\\') !== false) {
                         return true;
                     }
                 } catch (Throwable $_) {
